@@ -1,0 +1,12 @@
+.header{
+    grid-column: 1 / -1; //@param: start & end
+    //100% width, 1st column to last column
+    // 1 / 11 or 1 / -1
+    grid-row: 1 / 2; //take 1st row only
+    //start: 1st row, end: 2nd row
+    display: grid;
+    grid-template-columns: 1fr repeat(7, minmax(min-content, 16rem)) 1fr;
+    grid-template-rows: repeat(3, min-content);
+    gap:  2rem;
+    z-index: 100;
+}
