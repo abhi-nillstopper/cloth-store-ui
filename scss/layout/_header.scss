@@ -5,7 +5,7 @@
     grid-row: 1 / 2; //take 1st row only
     //start: 1st row, end: 2nd row
     display: grid;
-    grid-template-columns: 1fr repeat(7, minmax(min-content, 16rem)) 1fr;
+    grid-template-columns: minmax(10rem, 1fr) repeat(7, minmax(min-content, 16rem)) minmax(10rem, 1fr);
     grid-template-rows: repeat(3, min-content);
     gap:  2rem;
     z-index: 100;
